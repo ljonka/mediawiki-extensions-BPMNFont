@@ -10,7 +10,8 @@
 	"ResourceModules": {
 		"ext.bpmnfont.base": {
 			"styles": [
-				"bpmn-font/dist/css/bpmn.css"
+				"bpmn-font/dist/css/bpmn.css",
+				"ext.bpmnfont.base.css"
 			]
 		}
 	},
