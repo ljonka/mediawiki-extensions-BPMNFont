@@ -1,0 +1,27 @@
+{
+	"name": "BPMNFont",
+	"author": "Leonid Verhovskij",
+	"url": "https://www.mediawiki.org/wiki/Extension:BPMNFont",
+	"description": "This extension add resources for BPMN Font",
+	"version": "0.9",
+	"license-name": "GPL-2.0+",
+	"type": "validextensionclass",
+	"manifest_version": 1,
+	"ResourceModules": {
+		"ext.bpmnfont.base": {
+			"styles": [
+				"bpmn-font/dist/css/bpmn.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BPMNFont/resources"
+	},
+	"load_composer_autoloader": true,
+	"Hooks": {
+		"BeforePageDisplay": [
+			"BPMNFont\\Hooks::onBeforePageDisplay"
+		]
+	}
+}

@@ -1,0 +1,3 @@
+[submodule "resources/bpmn-font"]
+	path = resources/bpmn-font
+	url = https://github.com/bpmn-io/bpmn-font.git
